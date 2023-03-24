@@ -1,13 +1,241 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@100&family=Tilt+Prism&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{
+    font-family: 'Tilt Prism', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar{
+    width: 6px;
 }
+::-webkit-scrollbar-track{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.762);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(231, 126, 126);
+}
+
+
+/* .contactInfo{
+    background-color: #13bb24;
+    opacity: 60%;
+    width: 80%;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+} */
+
+#contact {
+    background: rgb(59,25,30);
+    background: linear-gradient(0deg, rgba(59,25,30,1) 0%, rgba(131,16,27,1) 100%);
+    height: 100vh;
+}
+
+.head_text {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    color: #64d0ff;
+}
+
+.head_text h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #b8870e;
+}
+
+.head_text h5 {
+    font-weight: 400;
+}
+
+.head_text::after {
+    content: "";
+    height: 1.4px;
+    width: 50px;
+    background-color: #010507;
+}
+
+.contact__option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    background: #21847c36;
+    backdrop-filter: blur(20px);
+    transition: 0.5s;
+}
+
+.contact__option:hover {
+    /* border: 1px solid #64d0ff61; */
+    background: #00000056;
+}
+
+.contact_option {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 23vw;
+}
+
+.contact_icons {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact__option a {
+    color: #64d0ff;
+    font-size: 14px;
+}
+
+.contact__option h4 {
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.contact__option h5 {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.contact__option a:hover {
+    color: #0006098c;
+}
+
+/**************** FORM ****************/
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    margin-top: 24px;
+    padding-bottom: 1rem;
+}
+
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0;
+    background: transparent;
+    border: 1px solid #44a5d69c;
+    color: rgb(23, 21, 21);
+    border-radius: 8px;
+    resize: none;
+}
+
+.contact_form button{
+    margin: auto;
+}
+.btn_form {
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    background-color: rgb(104, 206, 157);
+    
+    color: white;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+.btn_form :hover{
+    background-color: #64d0ff;
+}
+
+/******************** verify_submit *************************/
+.submit_verify_icons {
+    color: #3ddbf7;
+    font-size: 1.2rem;
+}
+
+.verify_submit {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    align-items: center;
+    background-color: #04021057;
+    padding: 20px 18px;
+    padding-left: 13px;
+    transform: translatey(2rem);
+    border-radius: 7px;
+    transition: 0.3s all ease;
+}
+
+.verify_submit p {
+    margin: 0 5px;
+    margin-right: 8px;
+    font-size: 15px;
+    color: rgb(237, 232, 232);
+    font-weight: 800;
+}
+
+.cut {
+    cursor: pointer;
+    /* color: #00000056; */
+}
+
+.cut:hover {
+    color: #ffffff91;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #909;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(5, 0, 0);
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: red;
+}
+
+@media only screen and (max-width: 767px){
+#contact{
+    height: fit-content;
+    padding-bottom: 5rem;
+}
+    .contact_form{
+        width: 80%;
+    height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 1085px){
+
+    #contact{
+        height: fit-content;
+        padding-bottom: 5rem;
+    }
+
+    .contact_form{
+    height: fit-content;
+    width: 80%;
+}
+}
+
+

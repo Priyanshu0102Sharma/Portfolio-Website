@@ -1,0 +1,21 @@
+.footer{
+    background-color: #e01d44;
+    height: 30vh;
+}
+
+
+@media only screen and (max-width: 767px){
+
+.footer{
+    height: fit-content;
+
+}
+
+.containerOfFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+}

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+
+.about-me{
+     /* background: rgb(20,3,106);
+   background: linear-gradient(0deg,rgba(22,50,79,1)  0%, rgba(20,3,106,1) 100%); */
+   
+   background: rgba(131,16,27,1);
+   background: linear-gradient(0deg, rgba(131,16,27,1) 0%, rgba(59,25,30,1) 100%);
+   
+
+   height: 100vh;
+   /* height: 65vh;
+    width: 100%; */
+    min-height: fit-content;
+}
+ame {
+    width: 80%;
+    padding: 5rem;
+    margin: auto;
+}
+ame h2{
+    font-family: 'Labrada', serif;
+    font-size: medium;
+  
+/* font-family: 'Tilt Prism', cursive; */
+}
+aboutMe h2,h3{
+    font-family: 'Labrada', serif;
+    font-weight: 400;
+/* font-family: 'Tilt Prism', cursive; */
+}
+.myImg img{
+    height: 45vh;
+    /* border-radius: 500px;
+    border: black 2px solid; */
+    box-shadow: 10px 38px 67px 6px rgba(0,0,0,0.8);
+-webkit-box-shadow: 10px 38px 67px 6px rgba(0,0,0,0.8);
+-moz-box-shadow: 10px 38px 67px 6px rgba(0,0,0,0.8);
+animation: animate 5s ease-in-out infinite;
+transition: all 1s ease-in-out;
+
+}
+
+
+.aboutMe{
+    /* width: 70%; */
+    /* font-family: 'Prosto One', cursive; */
+
+}
+@media only screen and (max-width: 767px){
+.about-me{
+    height: fit-content;
+}
+
+.myImg{
+    padding-top: 4rem;
+}
+
+.myImg img{
+    height: 36vh;
+}
+}
+@keyframes animate {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+    }
+    
+}

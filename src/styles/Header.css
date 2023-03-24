@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+.navbarBg{
+    /* overflow-x: hidden; */
+    /* background: rgb(42,11,138);
+    background: radial-gradient(circle, rgba(42,11,138,1) 0%, rgba(7,13,20,1) 100%); */
+    /* background: rgb(4,2,14);
+background: linear-gradient(0deg, rgba(42,11,138,1) 0%, rgba(7,13,20,1) 100%); */
+    color: rgb(228, 225, 225);
+}
+.items ul{
+    font-family: 'Prosto One', cursive;
+}
+
+/* @media only screen and (max-width: 767px){
+ ul{
+    padding: 2px;
+    height: 40vh;
+    flex-direction: column;
+    text-align: center;
+    background-color: aquamarine;
+    color: black;
+ }   
+} */
