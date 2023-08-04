@@ -11,8 +11,10 @@ import img1 from '../assets/img1.gif'
 import Typewriter from 'typewriter-effect'
 import Aos from "aos"
 import "aos/dist/aos.css"
+import resume from '../assets/PriyanshuSharma.pdf'
 import { useState } from 'react'
 import { ScrollToTop } from 'react-simple-scroll-up'
+import OtherInfo from './OtherInfo'
 
 
 function Home() {
@@ -68,18 +70,27 @@ function Home() {
               
             }
                 /></h3>
+
+    <div className="resume flex pt-8 mdm:justify-center">
+                      <a href={resume} className='p-3 bg-red-100 rounded-lg mr-2 hover:scale-110' download>Download Resume</a>
+                      <a href='https://drive.google.com/file/d/1gPDsf6PZwhdMlnkn37pwOTkRKJPgtcSu/view?usp=sharing' className='p-3 bg-red-100 rounded-lg ml-2 hover:scale-110'>View Resume</a>
+                    </div>
+
             </div>
+
 
             <div className="ill justify-center pl-16">
                 <img src={img1} alt="image not availaible" />
             </div>
             </div>
+              
         </div>
         <About />
         <Education />
         <Skills />
         <Project />
         <Experience />
+        <OtherInfo />
         <Contact />
     </>
   )

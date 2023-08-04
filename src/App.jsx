@@ -12,6 +12,7 @@ import Footer from './components/Footer'
 import Aos from "aos"
 import "aos/dist/aos.css"
 import { ScrollToTop } from 'react-simple-scroll-up';
+import OtherInfo from './components/OtherInfo';
 // import { ScrollToTop } from 'react-simple-scroll-up';
 
 
@@ -34,6 +35,7 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/experience' element={<Experience />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/other' element={<OtherInfo />} />
       </Routes>
       <Footer />
     </Router>

@@ -1,0 +1,87 @@
+.OtherInfo{
+    background: linear-gradient(0deg, rgba(59,25,30,1) 0%, rgba(131,16,27,1) 100%);
+    
+}
+.drawings img{
+    width:46%
+}
+.techBlog{
+    margin: 1rem;
+    width: 46%;
+}
+.animeBlog{
+    margin: 1rem;
+    width: 46%;
+}
+.animeBlog img{
+    margin: auto;
+    padding-bottom: 1rem;
+}
+.techBlog img{
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 767px){
+
+.npm{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.npm1{
+    margin: 1rem;
+}
+.npm2{
+    margin: 1rem;
+}
+.npm3{
+    margin: 1rem;
+}
+.npm4{
+    margin: 1rem;
+}
+
+.OtherInfo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: fit-content;
+}
+.drawings{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+.drawings img{
+    width: 90% ;
+}
+.blogs{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+   align-items: center;
+   margin: auto;
+}
+.techBlog{
+width: 90%;
+margin-bottom: 3rem;
+}
+
+.animeBlog{
+width: 90%;
+margin: auto;
+}
+.animeBlog img{
+    margin: auto;
+}
+.techBlog img{
+    margin:auto;
+   
+}
+
+}
