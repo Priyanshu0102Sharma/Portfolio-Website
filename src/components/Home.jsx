@@ -21,24 +21,7 @@ function Home() {
   useState(()=>{
     Aos.init({duration:2000})
   },[])
-//     var hello = document.getElementById('hello');
 
-//     var typewriter = new Typewriter(hello, {
-//         loop: true,
-//         delay: 75,
-//       });
-//       typewriter
-//   .pauseFor(2500)
-//   .typeString('A simple yet powerful native javascript')
-//   .pauseFor(300)
-//   .deleteChars(10)
-//   .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
-//   .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
-//   .pauseFor(1000)
-//   .start();
-{/* <ScrollToTop showUnder={160}>
-<span>UP</span>
-</ScrollToTop> */}
 
 
   return (
@@ -73,7 +56,7 @@ function Home() {
 
     <div className="resume flex pt-8 mdm:justify-center">
                       <a href={resume} className='p-3 bg-red-100 rounded-lg mr-2 hover:scale-110' download>Download Resume</a>
-                      <a href='https://drive.google.com/file/d/1TmVN2TtPM_6WDRzQ2aOnsyImBMnwq_C7/view?usp=sharing' className='p-3 bg-red-100 rounded-lg ml-2 hover:scale-110'>View Resume</a>
+                      <a href='https://drive.google.com/file/d/14eFnSegRzA3VvuXWdfefM2WaRm1Dgacf/view?usp=sharing' className='p-3 bg-red-100 rounded-lg ml-2 hover:scale-110'>View Resume</a>
                     </div>
 
             </div>

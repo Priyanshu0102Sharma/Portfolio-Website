@@ -38,18 +38,18 @@ function Project() {
                             <div className="pContent text-center">
                                 <h2 className='text-green-500 font-semibold pb-3'> MERN PROJECTS</h2>
                                 {/* <a href="https://xcrypto-indol.vercel.app/coins" className='text-center'>Xcrypto</a> */}
-                                <p className='font-bold pb-3'>1. Chikitsak</p>
+                                <p className='font-bold pb-3'>1. Jain Jalebi</p>
+
+                                <a href="https://jain-jalebi.netlify.app/" className=' hover:underline text-orange-600 text-center' target='_blank'><span ><FontAwesomeIcon icon={faLaptop} /></span> Demo</a>
+                                <br />
+                                <a href="https://github.com/Priyanshu0102Sharma/jain_restaurant" className=' hover:underline text-cyan-500 text-center' target='_blank' > <span><FontAwesomeIcon icon={faCode} /></span> Source Code </a>
+                                <p className='p-2'>Engineered a dynamic Online Shopping Website leveraging the MERN Stack, meticulously crafted with an elegant design using Tailwind CSS.</p>
+                                <p className='font-bold pb-3'>2. Chikitsak</p>
 
                                 <a href="http://doctorapp-7pnu.onrender.com/" className=' hover:underline text-orange-600 text-center' target='_blank'><span ><FontAwesomeIcon icon={faLaptop} /></span> Demo</a>
                                 <br />
                                 <a href="https://github.com/Priyanshu0102Sharma/Production-Doc-App" className=' hover:underline text-cyan-500 text-center' target='_blank' > <span><FontAwesomeIcon icon={faCode} /></span> Source Code </a>
                                 <p className='p-2 mb-3'>Chikitsak is developed with the purpose of connecting patient to docors online.It is developed using MERN Stack</p>
-                                <p className='font-bold pb-3'>2. Internship Status</p>
-
-                                <a href="https://internshipdata.netlify.app/" className=' hover:underline text-orange-600 text-center' target='_blank'><span ><FontAwesomeIcon icon={faLaptop} /></span> Demo</a>
-                                <br />
-                                <a href="https://github.com/Priyanshu0102Sharma/InternshipStatus" className=' hover:underline text-cyan-500 text-center' target='_blank' > <span><FontAwesomeIcon icon={faCode} /></span> Source Code </a>
-                                <p className='p-2'>Internship Status is a webApp created using MERN for updating internship status.</p>
                             </div>
                         </div>
                     </div>
