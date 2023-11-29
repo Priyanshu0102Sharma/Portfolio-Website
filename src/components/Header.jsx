@@ -6,6 +6,7 @@ import img1 from "../assets/mypic.jpeg"
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { AiFillGithub } from 'react-icons/ai';
+import openAudio from '../assets/opening.wav'
 // import { AiFillInstagram } from 'react-icons/ai';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 const Navbar = () => {
@@ -22,14 +23,19 @@ const Navbar = () => {
             ref.current.classList.add('mdm:right-[-400px]');
             ref.current.classList.remove('mdm:right-[0px]');
         } 
+        
     }
+   
+       
+      
+       
 
     return (
         <div className=' p-4 main-navbar flex justify-center items-center space-x-8 mdm:space-x-0 mdm:fixed mdm:bg-[#000] mdm:w-[100vw] mdm:p-2  mdm:top-0 mdm:left-0 mdm:justify-start mdm:items-start z-10'>
             <ul ref={ref} className={'flex space-x-10 justify-center items-center cursor-pointer text-white mdm:flex-col mdm:justify-start mdm:items-center mdm:space-y-6 mdm:space-x-0 mdm:fixed mdm:top-10 mdm:right-[-400px] mdm:w-[200px] mdm:h-[100vh] mdm:bg-[#550202] mdm:shadow-2xl mdm:pt-[40px] mdm:pl-3 mdm:z-10 duration-500 ease-in-out'}>
 
                 <img src={img1} alt="" className="hidden mdm:block rounded-full w-4/5 mx-auto h-40" />
-
+{/* this is me hello i' m goinf for workc */}
                 <div className="icons mdm:flex mdm:justify-center mdm:p-2 hidden">
              <a href="https://www.linkedin.com/in/priyanshu-sharma-/" className='text-gray-100 p-2 text-2xl hover:invert'><AiFillLinkedin /></a> 
              <a href="https://instagram.com/here__priyanshu__?igshid=ZDdkNTZiNTM=" className='text-gray-100 p-2 text-2xl hover:invert' ><AiFillInstagram /></a> 

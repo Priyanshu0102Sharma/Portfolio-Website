@@ -1,7 +1,4 @@
 import React from "react";
-import {MdOutlineEmail} from 'react-icons/md'
-import {BsWhatsapp} from 'react-icons/bs'
-import {RiMessengerLine} from 'react-icons/ri'
 import { useRef } from 'react';
 import {FiX} from 'react-icons/fi'
 import { BsPatchCheckFill } from 'react-icons/bs';
@@ -17,9 +14,7 @@ const Contact=()=>{
 
     const [value,setvalue]=useState();
     const form = useRef();
-    // const check_fn=()=>{
-    //     setvalue('pop_up');
-    // }
+    
     const sendEmail = (e) => {
       e.preventDefault();
        

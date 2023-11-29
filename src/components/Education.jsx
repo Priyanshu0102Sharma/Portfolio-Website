@@ -7,7 +7,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faSchool } from '@fortawesome/free-solid-svg-icons'
-
+import openAudio from '../assets/opening.wav'
 function Education() {
   useEffect(() => {
     Aos.init({
@@ -15,9 +15,12 @@ function Education() {
       easing: 'easeInOutElastic',
     })
   }, [])
+  function play(){
+    new Audio(openAudio).play()
+  }
   return (
     <>
-      <div className='education' id='education'>
+      <div className='education' id='education' onClick={play}>
         <h1 data-aos="slide-up" className='text-5xl font-semibold text-yellow-100 text-center'><span id='ed'><FontAwesomeIcon icon={faSchool} /></span> Education</h1>
         <div className='flex justify-around edu pt-5' >
 
@@ -40,7 +43,7 @@ function Education() {
               <h2 className='text-red-600'>B.tech in Computer Science & Engineering</h2>
               <h5 className='font-semibold text-red-200'>2020-Present</h5>
 
-              <h5 className='font-semibold text-gray-200'>CGPA - 9.394</h5>
+              <h5 className='font-semibold text-gray-200'>CGPA - 9.37</h5>
             </div>
           </div>
 

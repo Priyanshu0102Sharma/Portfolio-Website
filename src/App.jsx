@@ -1,5 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
@@ -13,6 +14,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import { ScrollToTop } from 'react-simple-scroll-up';
 import OtherInfo from './components/OtherInfo';
+import openAudio from './assets/opening.wav'
 // import { ScrollToTop } from 'react-simple-scroll-up';
 
 
@@ -22,8 +24,10 @@ function App() {
 
 
 
+
   return (
     <>
+   
     {/* <ScrollToTop {}/> */}
     <Router>
       
